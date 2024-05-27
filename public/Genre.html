@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Game Genres - GameShop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1b2838;
+            color: #c7d5e0;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            overflow: hidden;
+            background: url('https://i.makeagif.com/media/3-03-2016/xr69mm.gif') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            background-color: rgba(23, 26, 33, 0.9);
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            position: relative;
+            z-index: 2;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        .genre-card {
+            background-color: rgba(42, 71, 94, 0.9);
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .genre-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .genre-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .genre-title {
+            font-size: 18px;
+            margin: 15px 0 10px;
+        }
+        .genre-description {
+            font-size: 14px;
+            color: #acb2b8;
+        }
+        .genre-card button {
+            background-color: #66c0f4;
+            color: #1b2838;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .genre-card button:hover {
+            background-color: #5aa7d6;
+            transform: scale(1.05);
+        }
+        nav {
+            background-color: rgba(23, 26, 33, 0.8);
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #c6d4df;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        nav ul li a:hover {
+            color: #66c0f4;
+        }
+    </style>
+</head>
+<body>
+    <header>Video Game Genres</header>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Genre.html">Genre</a></li>
+            <li><a href="TopList.html">Top List</a></li>
+            <li><a href="FreeGames.html">Free Games</a></li>
+            <li><a href="AccountLogin.html">Login</a></li>
+            <li><a href="AccountSignUp.html">Sign up</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="genre-card">
+            <img src="https://m.media-amazon.com/images/I/81g4yy478tL._AC_UF1000,1000_QL80_.jpg" alt="Action">
+            <div class="genre-title">Action</div>
+            <div class="genre-description">Fast-paced games that require quick reflexes.</div>
+            <button onclick="window.location.href='ListOfAction.html'">Enter</button>
+        </div>
+        <div class="genre-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/TLOU_P2_Box_Art_2.png/220px-TLOU_P2_Box_Art_2.png" alt="Adventure">
+            <div class="genre-title">Adventure</div>
+            <div class="genre-description">Story-driven games with exploration elements.</div>
+            <button onclick="window.location.href='ListOfAdventureGames.html'">Enter</button>
+        </div>
+        <div class="genre-card">
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2054970/capsule_616x353.jpg?t=1713231266" alt="RPG">
+            <div class="genre-title">RPG</div>
+            <div class="genre-description">Role-playing games with character development.</div>
+            <button onclick="window.location.href='ListOfRPGGames.html'">Enter</button>
+        </div>
+    </div>
+</body>
+</html>

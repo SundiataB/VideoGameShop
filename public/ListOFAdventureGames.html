@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Games on Steam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1b2838;
+            color: #c7d5e0;
+            margin: 0;
+            padding: 0;
+            background: url('https://www.icegif.com/wp-content/uploads/2022/08/icegif-598.gif') no-repeat center center fixed;
+            overflow-x: hidden;
+            background-size: cover;
+        }
+
+        header {
+            background-color: #171a21;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .game-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .game-card {
+            background-color: #2a475e;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .game-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .game-card img {
+            width: 150px;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+        .game-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .game-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .game-genre {
+            font-size: 14px;
+            color: #acb2b8;
+            margin-bottom: 5px;
+        }
+        .game-rating {
+            font-size: 14px;
+            color: #acb2b8;
+            margin-bottom: 5px;
+        }
+        .game-price {
+            font-size: 16px;
+            color: #c7d5e0;
+            font-weight: bold;
+        }
+        nav {
+            background-color: rgba(23, 26, 33, 0.8);
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #c6d4df;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        nav ul li a:hover {
+            color: #66c0f4;
+        }
+        .purchase-button {
+            background-color: #66c0f4;
+            color: #1b2838;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .purchase-button:hover {
+            background-color: #5aa7d6;
+            transform: scale(1.05);
+        }
+    
+
+    </style>
+</head>
+<body>
+    <header> Action Games</header>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Genre.html">Genre</a></li>
+            <li><a href="TopList.html">Top List</a> </li>
+            <li><a href="FreeGames.html">Free Games</a> </li>
+            <li><a href="AccountLogin.html">Login</a></li>
+            <li><a href="AccountSignUp.html">Sign up</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="game-list">
+            <div class="game-card" data-title="DeathLoop" data-genre="Action, Adventure" data-rating="Very Positive" data-price="$39.99">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1252330/capsule_616x353.jpg?t=1705940190" alt="Game 1">
+                <div class="game-info">
+                    <div class="game-title">DeathLoop</div>
+                    <div class="game-genre">Action, Adventure</div>
+                    <div class="game-rating">Rating: Very Positive</div>
+                    <div class="game-price">$39.99</div>
+                    <a href="checkout.html?title=DeathLoop&price=39.99&image=https://image.api.playstation.com/vulcan/ap/rnd/202007/1617/Fv4asO4zbdqL83hiL9COTlWZ.png"><button class="purchase-button">Purchase</button></a>
+                </div>
+            </div>
+            <div class="game-card" data-title="HellBlade" data-genre="Action" data-rating="Mostly Positive" data-price="$59.99">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/414340/capsule_616x353.jpg?t=1714676487" alt="Game 2">
+                <div class="game-info">
+                    <div class="game-title">HellBlade</div>
+                    <div class="game-genre">Action</div>
+                    <div class="game-rating">Rating: Mostly Positive</div>
+                    <div class="game-price">$59.99</div>
+                    <a href="checkout.html?title=HellBlade&price=39.99&image=https://upload.wikimedia.org/wikipedia/en/d/d4/Hellblade_-_Senua%27s_Sacrifice.jpg"><button class="purchase-button">Purchase</button></a>
+                </div>
+            </div>
+            <div class="game-card" data-title="Cyberpunk 2077" data-genre="RPG, Open World" data-rating="Mixed" data-price="$49.99">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/capsule_616x353.jpg?t=1606066162" alt="Game 3">
+                <div class="game-info">
+                    <div class="game-title">Cyberpunk 2077</div>
+                    <div class="game-genre">RPG, Open World</div>
+                    <div class="game-rating">Rating: Mixed</div>
+                    <div class="game-price">$49.99</div>
+                    <a href="checkout.html?title=CyberPunk2077&price=39.99&image=https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg"><button class="purchase-button">Purchase</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.purchase-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const gameCard = this.closest('.game-card');
+                const gameTitle = gameCard.getAttribute('data-title');
+                const gameGenre = gameCard.getAttribute('data-genre');
+                const gameRating = gameCard.getAttribute('data-rating');
+                const gamePrice = gameCard.getAttribute('data-price');
+
+                const gameDetails = {
+                    title: gameTitle,
+                    genre: gameGenre,
+                    rating: gameRating,
+                    price: gamePrice
+                };
+
+                localStorage.setItem('selectedGame', JSON.stringify(gameDetails));
+                window.location.href = 'checkout.html';
+            });
+        });
+    </script>
+</body>
+</html>

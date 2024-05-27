@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Games on GameShop - Top List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1b2838;
+            color: #c7d5e0;
+            margin: 0;
+            padding: 0;
+            background: url('https://www.icegif.com/wp-content/uploads/2022/08/icegif-598.gif') no-repeat center center fixed;
+            overflow-x: hidden;
+            background-size: cover;
+        }
+        header {
+            background-color: #171a21;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            background-color: rgba(23, 26, 33, 0.8);
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #c6d4df;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        nav ul li a:hover {
+            color: #66c0f4;
+        }
+        .container {
+            padding: 20px;
+        }
+        .genre-buttons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .genre-button {
+            background-color: #66c0f4;
+            color: #1b2838;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .genre-button:hover {
+            background-color: #5aa7d6;
+            transform: scale(1.05);
+        }
+        .game-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .game-card {
+            background-color: #2a475e;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .game-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .game-card img {
+            width: 150px;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+        .game-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .game-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .game-genre {
+            font-size: 14px;
+            color: #acb2b8;
+            margin-bottom: 5px;
+        }
+        .game-rating {
+            font-size: 14px;
+            color: #acb2b8;
+            margin-bottom: 5px;
+        }
+        .game-price {
+            font-size: 16px;
+            color: #c7d5e0;
+            font-weight: bold;
+        }
+        .purchase-button {
+            background-color: #66c0f4;
+            color: #1b2838;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .purchase-button:hover {
+            background-color: #5aa7d6;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>Top Games on GameShop - Top List</header>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Genre.html">Genre</a></li>
+            <li><a href="TopList.html">Top List</a> </li>
+            <li><a href="FreeGames.html">Free Games</a> </li>
+            <li><a href="AccountLogin.html">Login</a></li>
+            <li><a href="AccountSignUp.html">Sign up</a></li>
+        </ul>
+    </nav>
+    
+        <div class="game-list" id="game-list">
+            <div class="game-card" data-genre="Action Adventure">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1371980/capsule_616x353.jpg?t=1715100900" alt="No Rest for the Wicked">
+                <div class="game-info">
+                    <div class="game-title">No Rest for the Wicked</div>
+                    <div class="game-genre">Action, Adventure</div>
+                    <div class="game-rating">Rating: Very Positive</div>
+                    <div class="game-price">$39.99</div>
+                    <a href="checkout.html?title=No%20Rest%20for%20the%20Wicked&price=39.99&image=https://cdn.cloudflare.steamstatic.com/steam/apps/1371980/capsule_616x353.jpg?t=1715100900"><button class="purchase-button">Purchase</button></a>
+                </div>
+            </div>
+            <div class="game-card" data-genre="RPG Strategy">
+                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202010/0222/b3iB2zf2xHj9shC0XDTULxND.png" alt="Ghost of Tsushima">
+                <div class="game-info">
+                    <div class="game-title">Ghost of Tsushima</div>
+                    <div class="game-genre">RPG, Strategy</div>
+                    <div class="game-rating">Rating: Mostly Positive</div>
+                    <div class="game-price">$59.99</div>
+                    <a href="checkout.html?title=Ghost%20of%20Tsushima&price=59.99&image=https://image.api.playstation.com/vulcan/ap/rnd/202010/0222/b3iB2zf2xHj9shC0XDTULxND.png"><button class="purchase-button">Purchase</button></a>
+                </div>
+            </div>
+            <div class="game-card" data-genre="Simulation Sports">
+                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202309/2116/3f1bd2f20b06047e0f029d44c909a2a58b45e7fc6ae1dd0f.jpg" alt="HellDivers 2">
+                <div class="game-info">
+                    <div class="game-title">HellDivers 2</div>
+                    <div class="game-genre">Simulation, Sports</div>
+                    <div class="game-rating">Rating: Overwhelmingly Positive</div>
+                    <div class="game-price">$39.99</div>
+                    <a href="checkout.html?title=HellDivers%202&price=39.99&image=https://image.api.playstation.com/vulcan/ap/rnd/202309/2116/3f1bd2f20b06047e0f029d44c909a2a58b45e7fc6ae1dd0f.jpg"><button class="purchase-button">Purchase</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameShop - Home</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            background-position: center;
+            animation: rotateBackground 30s infinite;
+            color: #c6d4df;
+        }
+        .purchase-button {
+            background-color: #66c0f4;
+            color: #1b2838;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .purchase-button:hover {
+            background-color: #5aa7d6;
+            transform: scale(1.05);
+        }
+
+        @keyframes rotateBackground {
+            0% {
+                background-image: url('https://media1.giphy.com/media/8bN3mIiuGhN0BBIWam/giphy.gif?cid=6c09b9526huooauh8rpsyaobmpui6lroieysrwt9vaf4ii4q&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g');
+            }
+            16.666% {
+                background-image: url('https://i.makeagif.com/media/11-08-2023/xQueAo.gif');
+            }
+            33.333% {
+                background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/553850/extras/BugAssaultSTEAM.gif?t=1707955699');
+            }
+            50% {
+                background-image: url('https://www.icegif.com/wp-content/uploads/2023/12/icegif-49.gif');
+            }
+            66.666% {
+                background-image: url('https://www.kotaku.com.au/wp-content/uploads/2023/06/15/1e818fdcc5d6456b9bb0b865e5830e49.gif?quality=75&w=640&h=360&crop=1');
+            }
+            83.333% {
+                background-image: url('https://cdn.vox-cdn.com/uploads/chorus_asset/file/25332530/THE_FINALS_Power_Shift.gif');
+            }
+            100% {
+                background-image: url('https://i.imgur.com/SKAlajf.gif');
+            }
+        }
+
+        nav {
+            background-color: rgba(23, 26, 33, 0.8);
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #c6d4df;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        nav ul li a:hover {
+            color: #66c0f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .hero {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .game-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .game {
+            background-color: rgba(23, 26, 33, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+            text-align: center;
+            width: 30%;
+        }
+        .game img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .game-title {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .game:hover {
+            transform: scale(1.05);
+        }
+        .categories {
+            margin-top: 40px;
+        }
+        .categories h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .category-list {
+            display: flex;
+            justify-content: space-between;
+        }
+        .category {
+            background-color: rgba(23, 26, 33, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            width: 30%;
+        }
+        .category h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #66c0f4;
+        }
+        .category img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Genre.html">Genre</a></li>
+            <li><a href="TopList.html">Top List</a> </li>
+            <li><a href="FreeGames.html">Free Games</a> </li>
+            <li><a href="AccountLogin.html">Login</a></li>
+            <li><a href="AccountSignUp.html">Sign up</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="hero">
+            Welcome to GameShop.com - Your Ultimate Gaming Destination
+        </div>
+        <div class="categories">
+            <h2>Categories</h2>
+            <div class="category-list">
+                <div class="category">
+                    <h3>Action</h3>
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/570/header.jpg?t=1610610910" alt="Action">
+                   
+                </div>
+                <div class="category">
+                    <h3>Adventure</h3>
+                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202311/2812/ae84720b553c4ce943e9c342621b60f198beda0dbf533e21.jpg" alt="Adventure">
+                    
+                </div>
+                <div class="category">
+                    <h3>RPG</h3>
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/379430/header.jpg?t=1604940188" alt="RPG">
+                  
+                </div>
+            </div>
+        </div>
+        <div class="game-row">
+            <div class="game">
+                <img src="https://cdn1.epicgames.com/offer/14ee004dadc142faaaece5a6270fb628/EGS_TheWitcher3WildHuntCompleteEdition_CDPROJEKTRED_S1_2560x1440-82eb5cf8f725e329d3194920c0c0b64f" alt="Witcher 3">
+                    <div class="game-price">$59.99</div>
+                    <a href="checkout.html?title=Witcher 3&price=39.99&image=https://cdn1.epicgames.com/offer/14ee004dadc142faaaece5a6270fb628/EGS_TheWitcher3WildHuntCompleteEdition_CDPROJEKTRED_S1_2560x1440-82eb5cf8f725e329d3194920c0c0b64f"><button class="purchase-button">Purchase</button></a>
+                <div class="game-title">Witcher 3</div>
+            </div>
+            <div class="game">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg" alt="CyberPunk 2077">
+                    <div class="game-price">$59.99</div>
+                    <a href="checkout.html?title=CyberPunk 2077&price=39.99&image=https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg"><button class="purchase-button">Purchase</button></a>
+                <div class="game-title">CyberPunk 2077</div>
+            </div>
+            <div class="game">
+                <img src="https://sm.ign.com/ign_me/feature/h/halo-infin/halo-infinites-open-world-has-upgrades-to-discover-places-to_3baa.jpg" alt="Halo Infinite">
+                    <div class="game-price">$59.99</div>
+                    <a href="checkout.html?title=Halo Infinite&price=39.99&image=https://sm.ign.com/ign_me/feature/h/halo-infin/halo-infinites-open-world-has-upgrades-to-discover-places-to_3baa.jpg"><button class="purchase-button">Purchase</button></a>
+                <div class="game-title">Halo Infinite</div>
+            </div>
+        </div>
+        <div class="game-row">
+            <div class="game">
+                <img src="https://image.api.playstation.com/vulcan/img/rnd/202112/1000/V9R0ldWdLSgS6A4d8qplbAgi.png" alt="Evil West">
+                    <div class="game-price">$59.99</div>
+                    <a href="checkout.html?title=Evil West&price=39.99&image=https://image.api.playstation.com/vulcan/img/rnd/202112/1000/V9R0ldWdLSgS6A4d8qplbAgi.png"><button class="purchase-button">Purchase</button></a>
+                <div class="game-title">Evil West</div>
+            </div>
+            <div class="game">
+                <img src="https://image.api.playstation.com/vulcan/img/rnd/202009/3014/1GKq8cOhLcJjJ4SQIRhzM1WI.jpg" alt="Vampyr">
+                
+                    <div class="game-price">$59.99</div>
+                    <a href="checkout.html?title=Vampyr&price=39.99&image=https://image.api.playstation.com/vulcan/img/rnd/202009/3014/1GKq8cOhLcJjJ4SQIRhzM1WI.jpg"><button class="purchase-button">Purchase</button></a>
+                <div class="game-title">Vampyr</div>
+            </div>
+            <div class="game">
+                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/4xJ8XB3bi888QTLZYdl7Oi0s.png" alt="God of War Ragnarok">
+               
+                    <div class="game-price">$59.99</div>
+                    <a href="checkout.html?title=God of War Ragnork&price=39.99&image=https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/4xJ8XB3bi888QTLZYdl7Oi0s.png"><button class="purchase-button">Purchase</button></a>
+                <div class="game-title">God of War Ragnarok</div>
+
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
